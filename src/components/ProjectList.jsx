@@ -1,5 +1,4 @@
 import React from "react";
-import projects from "../projects";
 import { useSelector } from "react-redux";
 import ProjectCard from "./ProjectCard";
 
