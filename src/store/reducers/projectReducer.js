@@ -1,6 +1,6 @@
-import projects from "../../projects";
+import projects from "../../mockData/projects";
 
-const initialState = { projects: projects };
+const initialState = { projects: [] };
 
 const projectReducer = (state = initialState, action) => {
   switch (action.type) {

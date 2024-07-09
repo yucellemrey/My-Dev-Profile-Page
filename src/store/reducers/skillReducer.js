@@ -1,6 +1,4 @@
-import skillsData from "../../skills";
-
-const initialState = { skills: skillsData };
+const initialState = { skills: [] };
 
 const skillReducer = (state = initialState, action) => {
   switch (action.type) {

@@ -1,19 +1,26 @@
 import "./styles/App.css";
 import Footer from "./components/Footer";
-import { Provider } from "react-redux";
-import store from "./store/store";
+import { useDispatch } from "react-redux";
 import ProjectList from "./components/ProjectList";
 import SkillList from "./components/SkillList";
+import { fetchSkills } from "./store/actions/skillActions";
+import { fetchProjects } from "./store/actions/projectActions";
+import { useEffect } from "react";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchSkills());
+    dispatch(fetchProjects());
+  }, [dispatch]);
+
   return (
-    <Provider store={store}>
-      <div>
-        <SkillList />
-        <ProjectList />
-        <Footer />
-      </div>
-    </Provider>
+    <div>
+      <SkillList />
+      <ProjectList />
+      <Footer />
+    </div>
   );
 }
 

@@ -1,0 +1,34 @@
+const projects = [
+  {
+    id: 1,
+    image: "https://via.placeholder.com/150",
+    title: "Workintech",
+    description:
+      "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+    tools: ["React", "Redux", "Axios"],
+    githubLink: "https://github.com/yucellemrey",
+    websiteLink: "https://workintech.com",
+  },
+  {
+    id: 2,
+    image: "https://via.placeholder.com/150",
+    title: "Random Jokes",
+    description:
+      "A website that fetches and displays random jokes using an external API.",
+    tools: ["React", "CSS", "API"],
+    githubLink: "https://github.com/yucellemrey",
+    websiteLink: "https://randomjokes.com",
+  },
+  {
+    id: 3,
+    image: "https://via.placeholder.com/150",
+    title: "Journey",
+    description:
+      "A travel blog platform where users can share their travel experiences and tips.",
+    tools: ["React", "Redux", "Node.js"],
+    githubLink: "https://github.com/yucellemrey",
+    websiteLink: "https://journey.com",
+  },
+];
+
+export default projects;
