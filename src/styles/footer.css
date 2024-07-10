@@ -1,0 +1,72 @@
+.footer-content{
+  margin: 0 auto;
+  padding: 4% 0 ;
+  max-width: 1280px; 
+}
+
+.footer-bg {
+  
+  background-color: #f9f9f9;
+  width: calc(100% + 500px); 
+  margin-left: -250px;
+ 
+}
+
+.footer-title{
+font-weight: 600;
+max-width: 540px;
+font-size: 3vw;
+padding-bottom: 2vw;
+}
+
+.footer-mail-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-mail{
+  color: #AF0C48;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 20px;
+  text-decoration: underline;
+  position: relative;
+  margin-left: 1.5em;
+}
+
+.footer-mail::before {
+  content: "👉";
+  position: absolute;
+  left: -1.5em; 
+  text-decoration: none;
+}
+
+
+.footer-links{
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+  font-weight: 500;
+
+}
+
+.footer-link-blog{
+  color: #0A0A14;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-link-git{
+  color: #00AB6B;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-link-linkedin{
+  text-decoration: none;
+  color: #0077B5;
+  font-weight: 500;
+}

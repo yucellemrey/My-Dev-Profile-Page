@@ -1,0 +1,22 @@
+.skill-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.skill-title{
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #4338CA;
+  font-weight: 500;
+
+}
+
+.skill-description{
+  font-size: 1em;
+  color: #666;
+  margin: 10px 0;
+  flex-grow: 1;
+  color: #6B7280;
+} 

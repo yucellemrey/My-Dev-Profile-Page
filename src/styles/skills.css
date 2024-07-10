@@ -1,0 +1,13 @@
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+  gap: 40px;
+  max-width: 1280px;
+} 
+
+.skills-title{
+  font-family: 'Inter', sans-serif;
+  color: #1F2937;
+  font-weight: 600;
+  padding: 3.5% 0 0 0;
+}

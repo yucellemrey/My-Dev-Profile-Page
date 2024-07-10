@@ -7,6 +7,7 @@ const ProjectCard = ({ project }) => {
       <img src={project.image} alt={project.title} className="project-image" />
       <h2 className="project-title">{project.title}</h2>
       <p className="project-description">{project.description}</p>
+
       <div className="project-tools">
         {project.tools.map((tool, index) => (
           <span key={index} className="project-tool">
