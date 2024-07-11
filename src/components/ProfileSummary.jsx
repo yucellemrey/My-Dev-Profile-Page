@@ -1,6 +1,9 @@
 import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import "../styles/profileSummary.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons"; // Import GitHub icon
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons"; // Import LinkedIn icon
 
 function ProfileSummary() {
   const handleGitRedirect = () => {
@@ -46,13 +49,14 @@ function ProfileSummary() {
         <div className="profile-summary-buttons">
           <button className="hire-me-button">Hire me</button>
           <button onClick={handleGitRedirect} className="git-button">
-            Github
+            <FontAwesomeIcon icon={faGithub} /> Github
           </button>
           <button onClick={handleLinkedinRedirect} className="linkedin-button">
-            Linkedin
+            <FontAwesomeIcon icon={faLinkedin} /> Linkedin
           </button>
         </div>
       </div>
+
       <img
         className="profile-summary-image"
         src="https://s3-alpha-sig.figma.com/img/76b0/6993/b04fd1fa29a883e2f4b8b8577a5c82eb?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CJNRaSGk48~si16RcWLL4nceuwlrtthIVixPASE6MPh4tSMWblo6pLySnUS6tirrEbxDSOfA0pJlvpHnhrVJH1M3KwbKNvMBLwyIyLCATDXo2IQCYFh5AlDbwS4NFXbl8xn2wJXh0l2UIsBeEgyTWyGcEo6hxO3OA2FP~63IV7Jtea-OAmstPxlV7XuNDtWkyxxKkS5FHB7Bh46yI4kvVxTlyfdC0M6GosOM5jWmaZToBHH2qhD0yssjSeFNLcfnDJCZ8Q8lEaEFPeZx4bbfsxgslqmMWcq0m6mhI3fxjHOBkX3Yd4jpggamDiUxRUPAodqC34A4~MYmFAQGHjWSIg__"
