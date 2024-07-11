@@ -1,22 +1,16 @@
 .footer-content{
-  margin: 0 auto;
-  padding: 4% 0 ;
+
+  padding: 2.5vw 9.5vw 6vw 9vw;
   max-width: 1280px; 
+  
 }
 
-.footer-bg {
-  
-  background-color: #f9f9f9;
-  width: calc(100% + 500px); 
-  margin-left: -250px;
- 
-}
 
 .footer-title{
-font-weight: 600;
-max-width: 540px;
-font-size: 3vw;
-padding-bottom: 2vw;
+  font-weight: 600;
+  max-width: 540px;
+  font-size: 3vw;
+  padding-bottom: 2vw;
 }
 
 .footer-mail-links{
@@ -50,7 +44,6 @@ padding-bottom: 2vw;
   gap: 15px;
   text-decoration: none;
   font-weight: 500;
-
 }
 
 .footer-link-blog{

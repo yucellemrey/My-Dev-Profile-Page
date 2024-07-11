@@ -6,6 +6,11 @@ import SkillList from "./components/SkillList";
 import { fetchSkills } from "./store/actions/skillActions";
 import { fetchProjects } from "./store/actions/projectActions";
 import { useEffect } from "react";
+import Divider from "@mui/material/Divider";
+import ProfilePitch from "./components/ProfilePitch";
+import Header from "./components/Header";
+import ProfileSummary from "./components/ProfileSummary";
+import { fetchProfile } from "./store/actions/profileActions";
 
 function App() {
   const dispatch = useDispatch();
@@ -13,12 +18,23 @@ function App() {
   useEffect(() => {
     dispatch(fetchSkills());
     dispatch(fetchProjects());
+    dispatch(fetchProfile());
   }, [dispatch]);
 
   return (
     <div>
+      <Header />
+      <ProfileSummary />
       <SkillList />
+      <Divider
+        sx={{ borderBottomWidth: 2, width: "85%", margin: "0 auto" }}
+      ></Divider>
+      <ProfilePitch />
+      <Divider
+        sx={{ borderBottomWidth: 2, width: "85%", margin: "0 auto" }}
+      ></Divider>
       <ProjectList />
+
       <Footer />
     </div>
   );

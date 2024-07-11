@@ -1,0 +1,88 @@
+.profile-summary-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 1.5vw 5vw 3vw 5vw;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-summary-desc{
+  font-size: 18px;
+  margin: 10px 0;
+  flex-grow: 1;
+  color: #6B7280;
+}
+
+.profile-summary-header{
+  font-weight: 700;
+  line-height: 1em;
+  font-size: 54px;
+}
+
+.profile-summary-buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.hire-me-button{
+  background-color:  #3730A3;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 12px 32px 12px 32px;
+  border: 1px solid #3730A3;
+  transition: background-color 0.3s, color 0.3s; 
+  cursor: pointer;
+}
+
+
+.hire-me-button:hover{
+  color: #3730A3;
+  background-color: #ffffff;
+}
+
+
+.git-button{
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 12px 32px 12px 32px;
+  color:#3730A3;
+  border: 1px solid #3730A3;
+  transition: background-color 0.3s, color 0.3s; 
+  cursor: pointer;
+}
+
+.git-button:hover {
+  background-color: #3730A3;
+  color: #ffffff;
+}
+  
+
+.linkedin-button{
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 12px 32px 12px 32px;
+  color:#3730A3;
+  border: 1px solid #3730A3;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.linkedin-button:hover {
+  background-color: #3730A3;
+  color: #ffffff;
+}
+
+.profile-summary-image {
+  width: 45%;
+  height: auto;
+  border-radius: 15px;
+  margin-left: 2vw;
+}

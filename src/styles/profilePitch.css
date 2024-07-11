@@ -1,0 +1,53 @@
+.profile-pitch-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 1.5vw 5vw 3vw 5vw;
+}
+
+.profile-pitch-header {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-pitch-context {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.profile-pitch-context > div {
+  width: 45%;
+}
+
+.profile-pitch-titles {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #4338CA;
+  font-weight: 500;
+}
+
+.profile-pitch-context p, .profile-pitch-about p {
+  font-size: 1em;
+  margin: 10px 0;
+  flex-grow: 1;
+  color: #6B7280;
+}
+
+.profile-pitch-about {
+  width: 45%;
+  font-family: 'Inter', sans-serif;
+}
+
+.profile-pitch-about h2 {
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+strong {
+  margin-right: 30px;
+}

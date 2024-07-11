@@ -3,7 +3,13 @@ import "../styles/footer.css";
 
 function Footer() {
   return (
-    <div className="footer-bg">
+    <div
+      style={{
+        backgroundColor: "#f9f9f9",
+        width: "1280px",
+        marginLeft: "-20px",
+      }}
+    >
       <div className="footer-content">
         <h1 className="footer-title">
           Let’s work together on your next product.

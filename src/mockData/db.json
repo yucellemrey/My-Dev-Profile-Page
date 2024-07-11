@@ -44,5 +44,16 @@
       "githubLink": "https://github.com/yucellemrey",
       "websiteLink": "https://journey.com"
     }
-  ]
+  ], 
+  "profile": {
+    "birthDate": "13.10.1997",
+    "city": "İstanbul",
+    "education": {
+      "university": "Özyeğin Üniversitesi",
+      "degree": "Endüstri Mühendisliği",
+      "graduationYear": 2022
+    },
+    "preferredRole": "Frontend, UI",
+    "aboutMe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+  }
 }

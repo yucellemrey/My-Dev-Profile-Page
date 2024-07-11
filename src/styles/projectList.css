@@ -2,14 +2,15 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
   gap: 10%;
-  padding: 1.5% 0 6% 0;
+  padding: 1.5vw 7.5vw 6vw 7.5vw;
   font-family: 'Inter', sans-serif;
   max-width: 1280px;
+  width: 85%;
 }
 
-.project-list-title{
+.project-list-title {
   font-family: 'Inter', sans-serif;
   color: #1F2937;
   font-weight: 600;
-  padding: 3.5% 0 0 0;
+  padding: 3.5vw 7.5vw 0 7.5vw;
 }
