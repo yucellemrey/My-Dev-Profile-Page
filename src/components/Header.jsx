@@ -2,11 +2,14 @@ import React from "react";
 import "../styles/header.css";
 import ellipse from "../assets/Ellipse 9.png";
 import { Link } from "react-scroll";
+import darkMode from "../assets/Night Mode.png";
 
 function Header() {
   return (
     <div className="header-container">
-      <div>Switch'ler</div>
+      <div>
+        <button src={darkMode}></button>
+      </div>
       <div className="header-low">
         <div className="initials-container">
           <img src={ellipse} alt="" className="initials-image" />

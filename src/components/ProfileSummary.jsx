@@ -2,20 +2,39 @@ import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import "../styles/profileSummary.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons"; // Import GitHub icon
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"; // Import LinkedIn icon
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ProfileSummary() {
   const handleGitRedirect = () => {
-    window.location.href = "https://github.com/yucellemrey";
+    toast.info("Directing to Github!", {
+      position: "top-right",
+      autoClose: 2500,
+      hideProgressBar: true,
+      theme: "colored",
+    });
+    setTimeout(() => {
+      window.location.href = "https://github.com/yucellemrey";
+    }, 2500);
   };
 
   const handleLinkedinRedirect = () => {
-    window.location.href = "https://www.linkedin.com/in/emreyucel1/";
+    toast.info("Directing to Linkedin!", {
+      position: "top-right",
+      autoClose: 2500,
+      hideProgressBar: true,
+      theme: "colored",
+    });
+    setTimeout(() => {
+      window.location.href = "https://www.linkedin.com/in/emreyucel1/";
+    }, 2500);
   };
 
   return (
     <div className="profile-summary-container">
+      <ToastContainer />
       <div>
         <Box display="flex" alignItems="center">
           <Divider

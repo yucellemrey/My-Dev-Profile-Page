@@ -28,7 +28,6 @@ function App() {
       <section id="skills">
         <SkillList />
       </section>
-
       <Divider
         sx={{ borderBottomWidth: 2, width: "85%", margin: "0 auto" }}
       ></Divider>
