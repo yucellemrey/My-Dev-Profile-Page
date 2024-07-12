@@ -25,7 +25,10 @@ function App() {
     <div>
       <Header />
       <ProfileSummary />
-      <SkillList />
+      <section id="skills">
+        <SkillList />
+      </section>
+
       <Divider
         sx={{ borderBottomWidth: 2, width: "85%", margin: "0 auto" }}
       ></Divider>
@@ -33,8 +36,9 @@ function App() {
       <Divider
         sx={{ borderBottomWidth: 2, width: "85%", margin: "0 auto" }}
       ></Divider>
-      <ProjectList />
-
+      <section id="projects">
+        <ProjectList />
+      </section>
       <Footer />
     </div>
   );

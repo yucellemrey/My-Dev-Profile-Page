@@ -1,0 +1,69 @@
+.header-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0 4vw 0;
+}
+
+.header-low{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 1280px;
+}
+
+.initials-container {
+  position: relative;
+  display: inline-block;
+}
+
+.initials-image {
+  display: block;
+}
+
+.initials-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg);
+  color: #7B61FF;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  
+}
+
+.top-nav-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  align-items: center;
+}
+
+.top-nav-links{
+  text-decoration: none;
+  color: #6B7280;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.h-hire-me-button{
+  font-weight: 500;
+  background-color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 12px 32px 12px 32px;
+  color:#3730A3;
+  border: 1px solid #3730A3;
+  transition: background-color 0.3s, color 0.3s; 
+  cursor: pointer;
+}
+
+.h-hire-me-button:hover {
+  background-color: #3730A3;
+  color: #ffffff;
+}
