@@ -11,8 +11,12 @@ import ProfilePitch from "./components/ProfilePitch";
 import Header from "./components/Header";
 import ProfileSummary from "./components/ProfileSummary";
 import { fetchProfile } from "./store/actions/profileActions";
+import React, { useContext } from "react";
+import { ThemeProvider, ThemeContext } from "./ThemeContext";
+import "./styles/themes.css";
 
 function App() {
+  const { theme } = useContext(ThemeContext);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -22,7 +26,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div data-theme={theme}>
       <Header />
       <ProfileSummary />
       <section id="skills">
@@ -43,4 +47,10 @@ function App() {
   );
 }
 
-export default App;
+const WrappedApp = () => (
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>
+);
+
+export default WrappedApp;

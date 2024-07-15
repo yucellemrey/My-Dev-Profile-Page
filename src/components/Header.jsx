@@ -3,12 +3,18 @@ import "../styles/header.css";
 import ellipse from "../assets/Ellipse 9.png";
 import { Link } from "react-scroll";
 import darkMode from "../assets/Night Mode.png";
+import { useContext } from "react";
+import { ThemeContext } from "../ThemeContext";
 
 function Header() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
     <div className="header-container">
       <div>
-        <button src={darkMode}></button>
+        <button onClick={toggleTheme}>
+          {theme === "light" ? "Dark Mode" : "Light Mode"}
+        </button>
       </div>
       <div className="header-low">
         <div className="initials-container">

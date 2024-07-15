@@ -1,0 +1,18 @@
+/* styles/themes.css */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #4338CA;
+  --button-background-color: #3730A3;
+  --button-text-color: #ffffff;
+  --button-border-color: #3730A3;
+}
+
+[data-theme='dark'] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --link-color: #8AB4F8;
+  --button-background-color: #ffffff;
+  --button-text-color: #3730A3;
+  --button-border-color: #8AB4F8;
+}
