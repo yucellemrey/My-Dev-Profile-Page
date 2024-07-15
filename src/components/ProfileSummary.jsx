@@ -42,12 +42,12 @@ function ProfileSummary() {
               width: "50px",
               borderBottomWidth: 1,
               marginRight: 1,
-              borderColor: "#3730A3",
+              borderColor: `var(--hero-name)`,
             }}
           />
           <Typography
             sx={{
-              color: "#4338CA",
+              color: `var(--hero-name)`,
               fontFamily: "Inter",
               fontWeight: "500",
               fontSize: "1.1em",

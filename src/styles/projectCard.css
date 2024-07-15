@@ -1,3 +1,5 @@
+@import './themes.css';
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -20,7 +22,7 @@
 .project-title {
   font-size: 1.5em;
   margin: 10px 0;
-  color: #4338CA;
+  color: var(--projects-header);
   font-weight: 500;
 }
 
@@ -28,7 +30,7 @@
   font-size: 1em;
   margin: 10px 0;
   flex-grow: 1;
-  color: #6B7280;
+  color: var(--text-color);
 }
 
 
@@ -41,11 +43,11 @@
 }
 
 .project-tool {
-  background: white;
-  border: 1px solid #3730A3;
+  background: var(--project-tools-background);
+  border: 1px solid var(--project-tools-text);
   border-radius: 4px;
   padding: 6px 18px 7px 18px;
-  color: #3730A3;
+  color: var(--project-tools-text);
   font-size: 14px;
   font-weight: 500;
 }
@@ -58,7 +60,7 @@
 }
 
 .project-link {
-  color: #3730A3;
+  color: var(--button-border-color);
   text-decoration: underline;
   font-weight: 500;
 }

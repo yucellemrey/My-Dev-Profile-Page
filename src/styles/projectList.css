@@ -1,3 +1,5 @@
+@import './themes.css';
+
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
@@ -10,7 +12,8 @@
 
 .project-list-title {
   font-family: 'Inter', sans-serif;
-  color: #1F2937;
+  color: var(--header-color);
+  font-size: 2.2em;
   font-weight: 600;
   padding: 3.5vw 7.5vw 0 7.5vw;
 }

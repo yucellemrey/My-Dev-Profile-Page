@@ -1,18 +1,65 @@
 /* styles/themes.css */
 :root {
   --background-color: #ffffff;
-  --text-color: #000000;
+  --background-color-dark: rgb(37, 34, 34);
+  --header-color: #1F2937;
+  --header-color-dark: #AEBCCF;
+  --hero-name:#4338CA;
+  --hero-name-dark: #B7AAFF;
+  --hero-hire-me-button: #3730A3;
+  --hero-hire-me-button-dark:#E1E1FF;
+  --hero-hire-me-text: white;
+  --hero-hire-me-text-dark: #000000;
+  --hero-git-linkedin-button: white;
+  --hero-git-linkedin-button-dark: #383838;
+  --hero-git-linkedin-button-text: #3730A3;
+  --hero-git-linkedin-button-text-dark:#E1E1FF;
+  --projects-header-dark: #CFCBFF;
+  --projects-header:#4338CA;
+  --text-color: #6B7280;
+  --text-color-dark: #ffffff;
   --link-color: #4338CA;
+  --link-color-dark: #8AB4F8;
+  --button-background-color-w: white;
   --button-background-color: #3730A3;
+  --button-background-color-dark: #f9f9f9;
   --button-text-color: #ffffff;
+  --button-text-color-dark: #3730A3;
   --button-border-color: #3730A3;
+  --button-border-color-dark: #E1E1FF;
+  --project-tools-background: white;
+  --project-tools-background-dark: #383838;
+  --project-tools-text:#3730A3;
+  --project-tools-text-dark:#8F88FF;
+  --divider-color-dark: #BAB2E7;
+  --footer-bg: #f9f9f9;
+  --footer-pb: black;
+  --footer-pb-dark: #E1E1FF;
+  --footer-bg-dark:#141414;
+  --footer-email-dark: #BAB2E7;
+  --footer-email: #AF0C48;
 }
 
+
 [data-theme='dark'] {
-  --background-color: #121212;
-  --text-color: #ffffff;
-  --link-color: #8AB4F8;
-  --button-background-color: #ffffff;
-  --button-text-color: #3730A3;
-  --button-border-color: #8AB4F8;
+  
+  --background-color: var(--background-color-dark);
+  --text-color: var(--text-color-dark);
+  --link-color: var(--link-color-dark);
+  --button-background-color: var(--button-background-color-dark);
+  --button-text-color: var(--button-text-color-dark);
+  --button-border-color: var(--button-border-color-dark);
+  --header-color: var(--header-color-dark);
+  --hero-name: var(--hero-name-dark);
+  --hero-hire-me-button: var(--hero-hire-me-button-dark);
+  --hero-hire-me-text: var(--hero-hire-me-text-dark);
+  --hero-git-linkedin-button: var(--hero-git-linkedin-button-dark);
+  --hero-git-linkedin-button-text: var(--hero-git-linkedin-button-text-dark);
+  --projects-header: var(--projects-header-dark);
+  --project-tools-background: var(--project-tools-background-dark);
+  --project-tools-text: var(--project-tools-text-dark);
+  --footer-bg:var(--footer-bg-dark);
+  --footer-pb: var(--footer-pb-dark);
+  --footer-email: var(--footer-email-dark);
+  --divider-color: var(--divider-color-dark);
 }

@@ -1,33 +1,17 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* src/styles/index.css */
+@import './themes.css';
 
 body {
-  margin: 0;
-  display: flex;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Inter",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 1280px;
+  width: 1280px;
+  margin: 0 auto;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  font-family: "Inter",sans-serif;
-  max-width: calc(1440px -250px);
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+
+

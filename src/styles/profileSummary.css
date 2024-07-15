@@ -1,3 +1,5 @@
+@import './themes.css';
+
 .profile-summary-container{
   display: flex;
   flex-direction: row;
@@ -15,23 +17,25 @@
   font-size: 18px;
   margin: 10px 0;
   flex-grow: 1;
-  color: #6B7280;
+  color: var(--text-color);
 }
 
 .profile-summary-header{
   font-weight: 700;
   line-height: 1em;
   font-size: 54px;
+  color: var(--header-color);
 }
 
 .profile-summary-buttons{
   display: flex;
   gap: 10px;
+  margin-top: 3vw;
 }
 
 .hire-me-button{
-  background-color:  #3730A3;
-  color: white;
+  background-color: var(--hero-hire-me-button);
+  color: var(--hero-hire-me-text);
   font-weight: 500;
   font-size: 18px;
   border-radius: 6px;
@@ -49,12 +53,13 @@
 
 
 .git-button{
+  background-color: var(--hero-git-linkedin-button);
   font-weight: 500;
   font-size: 18px;
   border-radius: 6px;
   padding: 12px 32px 12px 32px;
-  color:#3730A3;
-  border: 1px solid #3730A3;
+  color:var(--hero-git-linkedin-button-text);
+  border: 1px solid var(--button-border-color);
   transition: background-color 0.3s, color 0.3s; 
   cursor: pointer;
 }
@@ -66,12 +71,13 @@
   
 
 .linkedin-button{
+  background-color: var(--hero-git-linkedin-button);
   font-weight: 500;
   font-size: 18px;
   border-radius: 6px;
   padding: 12px 32px 12px 32px;
-  color:#3730A3;
-  border: 1px solid #3730A3;
+  color:var(--hero-git-linkedin-button-text);
+  border: 1px solid var(--button-border-color);
   transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
 }
