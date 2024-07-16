@@ -6,8 +6,11 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useTranslation } from "react-i18next";
 
 function ProfileSummary() {
+  const { t } = useTranslation();
+
   const handleGitRedirect = () => {
     toast.info("Directing to Github!", {
       position: "top-right",
@@ -39,7 +42,7 @@ function ProfileSummary() {
         <Box display="flex" alignItems="center">
           <Divider
             sx={{
-              width: "50px",
+              width: "100px",
               borderBottomWidth: 1,
               marginRight: 1,
               borderColor: `var(--hero-name)`,
@@ -57,16 +60,14 @@ function ProfileSummary() {
             Emre Yücel
           </Typography>
         </Box>
-        <h1 className="profile-summary-header">
-          Creative thinker Minimalism lover
-        </h1>
+        <h1 className="profile-summary-header">{t("profileSummary.title")}</h1>
         <p className="profile-summary-desc">
-          Hi, I’m Emre. I’m a full-stack developer. If you are looking for a
-          Developer who to craft solid and scalable frontend products with great
-          user experiences. Let’s shake hands with me.
+          {t("profileSummary.description")}
         </p>
         <div className="profile-summary-buttons">
-          <button className="hire-me-button">Hire me</button>
+          <button className="hire-me-button">
+            {t("profileSummary.hire-me-button")}
+          </button>
           <button onClick={handleGitRedirect} className="git-button">
             <FontAwesomeIcon icon={faGithub} /> Github
           </button>

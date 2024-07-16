@@ -21,6 +21,7 @@ const ProjectCard = ({ project }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="project-link"
+          data-cy={`github-link-${project.id}`}
         >
           Github
         </a>
