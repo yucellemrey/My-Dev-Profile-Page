@@ -9,6 +9,7 @@ body {
   max-width: 1280px;
   width: 1280px;
   margin: 0 auto;
+  line-height: 1.5em;
   place-items: center;
   overflow-x: hidden;
 }

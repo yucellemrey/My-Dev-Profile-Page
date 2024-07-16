@@ -1,0 +1,18 @@
+{
+  "header": {
+    "nav1": "Yetenekler",
+    "nav2": "Projeler",
+    "theme-to-dark": "Karanlık Mod",
+    "theme-to-light": "Aydınlık Mod",
+    "hire-me-button": "Kariyer"
+  },
+  "profileSummary": {
+    "title": "Yaratıcı Düşünen Minimalizm Tutkunu",
+    "description": "Merhaba, ben Emre. Ben bir ön yüz geliştiriciyim. Eğer sağlam ve ölçeklenebilir ön yüz ürünleri yaratabilecek bir mühendis arıyorsanız, benimle el irtibata geçebilirsiniz.",
+    "hire-me-button": "Kariyer"
+  },
+  "footer": {
+    "header": "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
+    "blog": "Kişisel Blog"
+  }
+}

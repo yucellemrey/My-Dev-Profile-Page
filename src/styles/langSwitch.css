@@ -1,0 +1,19 @@
+@import "./themes.css";
+
+.lang-switch{
+font-weight: 700;
+color: var(--header-lang-switch);
+}
+
+.lang-switch:hover{
+cursor: pointer;
+}
+
+.lang-switch-complementary{
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.lang-switch-complementary:hover{
+  cursor: auto;
+}

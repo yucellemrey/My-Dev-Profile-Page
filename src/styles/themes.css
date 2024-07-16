@@ -38,6 +38,10 @@
   --footer-bg-dark:#141414;
   --footer-email-dark: #BAB2E7;
   --footer-email: #AF0C48;
+  --header-ellipse-initial:#7B61FF ;
+  --header-ellipse-initial-dark:#8F88FF ;
+  --header-lang-switch-dark: #BAB2E7;
+  --header-lang-switch:#3730A3;
 }
 
 
@@ -62,4 +66,6 @@
   --footer-pb: var(--footer-pb-dark);
   --footer-email: var(--footer-email-dark);
   --divider-color: var(--divider-color-dark);
+  --header-ellipse-initial: var(--header-ellipse-initial-dark);
+  --header-lang-switch: var(--header-lang-switch-dark);
 }

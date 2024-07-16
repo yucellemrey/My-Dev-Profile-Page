@@ -1,0 +1,20 @@
+{
+  "header": {
+    "nav1": "Skills",
+    "nav2": "Projects",
+    "theme-to-dark": "Dark Mode",
+    "theme-to-light": "Light Mode",
+    "hire-me-button": "Hire me",
+    "lang-switch-to-tr": "Türkçe",
+    "lang-switch-to-en": "English"
+  },
+  "profileSummary": {
+  "title": "Creative thinker Minimalism lover",
+  "description": "Hi, I'm Emre. I’m a front-end developer. If you are looking for a Developer who can craft solid and scalable frontend products with great user experiences, let’s shake hands with me.",
+  "hire-me-button": "Hire me"
+},
+  "footer": {
+    "header": "Let’s work together on your next product.",
+    "blog": "Personal Blog"
+  }
+}
