@@ -10,6 +10,7 @@ body {
   line-height: 1.5em;
   place-items: center;
   overflow-x: hidden;
+  margin: 0 auto; 
 }
 
 

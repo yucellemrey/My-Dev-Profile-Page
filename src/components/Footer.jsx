@@ -8,7 +8,7 @@ function Footer() {
     <div
       style={{
         backgroundColor: `var(--footer-bg)`,
-        width: "1280px",
+        width: "100vw",
       }}
     >
       <div className="footer-content">
