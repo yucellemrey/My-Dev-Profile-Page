@@ -1,5 +1,4 @@
 import axios from "axios";
-import data from "../../mockData/db.json";
 
 export const setProfile = (profile) => {
   return {
@@ -11,7 +10,12 @@ export const setProfile = (profile) => {
 export const fetchProfile = () => {
   return async (dispatch) => {
     const lang = localStorage.getItem("language");
-    console.log(data[lang]);
+
+    const response = await axios.get("/db.json");
+    const data = response.data;
+
+    console.log(response.data);
+
     try {
       const postResponse = await axios.post(
         "https://reqres.in/api/workintech",
