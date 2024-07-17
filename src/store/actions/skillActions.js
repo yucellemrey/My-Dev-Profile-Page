@@ -15,7 +15,7 @@ export const fetchSkills = () => {
     try {
       console.log("Posting data to API...");
       const postResponse = await axios.post(
-        "https://reqres.in/api/workintech",
+        'https://reqres.in/api/users',
         data[lang]
       );
 
