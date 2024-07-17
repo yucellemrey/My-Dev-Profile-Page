@@ -1,4 +1,5 @@
 import axios from "axios";
+import data from "../../mockData/db.json";
 
 export const setProjects = (projects) => {
   return {
@@ -11,10 +12,6 @@ export const fetchProjects = () => {
   return async (dispatch) => {
     const lang = localStorage.getItem("language");
 
-    const response = await axios.get("/db.json");
-    const data = response.data;
-
-    console.log(response.data);
     try {
       const postResponse = await axios.post(
         "https://reqres.in/api/workintech",

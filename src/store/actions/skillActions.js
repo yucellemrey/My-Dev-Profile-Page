@@ -1,4 +1,5 @@
 import axios from "axios";
+import data from "../../mockData/db.json";
 
 export const setSkills = (skills) => {
   return {
@@ -10,10 +11,6 @@ export const setSkills = (skills) => {
 export const fetchSkills = () => {
   return async (dispatch) => {
     const lang = localStorage.getItem("language");
-    const response = await axios.get("/db.json");
-    const data = response.data;
-
-    console.log(response.data);
 
     try {
       const postResponse = await axios.post(
