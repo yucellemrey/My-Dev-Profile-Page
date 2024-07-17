@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Skill from "./Skill";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import "../styles/skills.css";
 import { fetchSkills } from "../store/actions/skillActions";
 
@@ -11,6 +11,10 @@ function SkillList() {
   useEffect(() => {
     dispatch(fetchSkills());
   }, [dispatch]);
+
+  if (!skills || skills.length === 0) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <>

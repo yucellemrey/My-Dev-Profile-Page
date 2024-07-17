@@ -1,16 +1,20 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
+import { useSelector, useDispatch } from "react-redux";
 import "../styles/projectList.css";
 import { fetchProjects } from "../store/actions/projectActions";
 
-const ProjectList = () => {
+function ProjectList() {
   const dispatch = useDispatch();
   const projects = useSelector((state) => state.projects.projects);
 
   useEffect(() => {
     dispatch(fetchProjects());
   }, [dispatch]);
+
+  if (!projects || projects.length === 0) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <>
@@ -22,6 +26,6 @@ const ProjectList = () => {
       </div>
     </>
   );
-};
+}
 
 export default ProjectList;
