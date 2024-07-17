@@ -1,11 +1,16 @@
 import React, { useEffect } from "react";
 import Skill from "./Skill";
-import {  useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "../styles/skills.css";
+import { fetchSkills } from "../store/actions/skillActions";
 
 function SkillList() {
- 
+  const dispatch = useDispatch();
   const skills = useSelector((state) => state.skills.skills);
+
+  useEffect(() => {
+    dispatch(fetchSkills());
+  }, [dispatch]);
 
   return (
     <>

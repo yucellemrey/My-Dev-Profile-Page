@@ -4,6 +4,11 @@ import "../styles/profilePitch.css";
 
 function ProfilePitch() {
   const profile = useSelector((state) => state.profile.profile);
+  console.log(profile.birthDate);
+
+  if (!profile || Object.keys(profile).length === 0) {
+    return <div>Loading...</div>; // Or any loading indicator you prefer
+  }
 
   return (
     <div className="profile-pitch-container">

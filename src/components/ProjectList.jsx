@@ -1,10 +1,16 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ProjectCard from "./ProjectCard";
 import "../styles/projectList.css";
+import { fetchProjects } from "../store/actions/projectActions";
 
 const ProjectList = () => {
+  const dispatch = useDispatch();
   const projects = useSelector((state) => state.projects.projects);
+
+  useEffect(() => {
+    dispatch(fetchProjects());
+  }, [dispatch]);
 
   return (
     <>
