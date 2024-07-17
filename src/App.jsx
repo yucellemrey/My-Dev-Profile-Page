@@ -15,6 +15,10 @@ import { fetchProfile } from "./store/actions/profileActions";
 import { ThemeProvider } from "./ThemeContext.jsx";
 
 function App() {
+  if (!localStorage.getItem("language")) {
+    localStorage.setItem("language", "en");
+  }
+
   const dispatch = useDispatch();
 
   useEffect(() => {
