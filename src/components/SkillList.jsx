@@ -3,6 +3,7 @@ import Skill from "./Skill";
 import { useSelector, useDispatch } from "react-redux";
 import "../styles/skills.css";
 import { fetchSkills } from "../store/actions/skillActions";
+import { Box, CircularProgress } from "@mui/material";
 
 function SkillList() {
   const dispatch = useDispatch();
@@ -15,7 +16,11 @@ function SkillList() {
   }, [dispatch]);
 
   if (!skills || skills.length === 0) {
-    return <p>Loading...</p>;
+    return (
+      <Box sx={{ display: "flex" }}>
+        <CircularProgress />
+      </Box>
+    );
   }
 
   return (

@@ -3,6 +3,8 @@ import ProjectCard from "./ProjectCard";
 import { useSelector, useDispatch } from "react-redux";
 import "../styles/projectList.css";
 import { fetchProjects } from "../store/actions/projectActions";
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
 
 function ProjectList() {
   const dispatch = useDispatch();
@@ -15,7 +17,11 @@ function ProjectList() {
   }, [dispatch]);
 
   if (!projects || projects.length === 0) {
-    return <p>Loading...</p>;
+    return (
+      <Box sx={{ display: "flex" }}>
+        <CircularProgress />
+      </Box>
+    );
   }
 
   return (

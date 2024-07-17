@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "../styles/profilePitch.css";
+import { Box, CircularProgress } from "@mui/material";
 
 function ProfilePitch() {
   const profile = useSelector((state) => state.profile.profile);
@@ -12,7 +13,11 @@ function ProfilePitch() {
   }
 
   if (!profile || Object.keys(profile).length === 0) {
-    return <div>Loading...</div>;
+    return (
+      <Box sx={{ display: "flex" }}>
+        <CircularProgress />
+      </Box>
+    );
   }
 
   return (

@@ -9,6 +9,7 @@ function LanguageSwitcher() {
     if (i18n.language !== lng) {
       i18n.changeLanguage(lng);
       localStorage.setItem("language", lng);
+      window.location.reload();
     }
   };
 

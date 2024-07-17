@@ -1,5 +1,3 @@
-import projects from "../../mockData/projects";
-
 const initialState = { projects: [] };
 
 const projectReducer = (state = initialState, action) => {
