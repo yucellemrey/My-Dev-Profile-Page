@@ -12,7 +12,7 @@ export const fetchSkills = () => {
   return (dispatch) => {
     const lang = localStorage.getItem("language");
 
-    console.log(data);
+    console.log(data[lang]);
 
     console.log("Posting skills data to API...");
     axios

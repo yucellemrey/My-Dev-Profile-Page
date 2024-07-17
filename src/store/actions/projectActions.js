@@ -12,7 +12,7 @@ export const fetchProjects = () => {
   return (dispatch) => {
     const lang = localStorage.getItem("language");
 
-    console.log(data);
+    console.log(data[lang]);
 
     console.log("Posting projects data to API...");
     axios

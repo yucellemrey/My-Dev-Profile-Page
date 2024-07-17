@@ -12,7 +12,7 @@ export const fetchProfile = () => {
   return (dispatch) => {
     const lang = localStorage.getItem("language");
 
-    console.log(data);
+    console.log(data[lang]);
 
     console.log("Posting data to API...");
     axios
@@ -20,7 +20,7 @@ export const fetchProfile = () => {
       .then((response) => {
         console.log("Post response data:", response.data);
         const result = response.data;
-        dispatch(setProfile(result));
+        dispatch(setProfile(result.profile));
       })
       .catch((error) => {
         console.error("There was an error fetching the profile data!", error);
