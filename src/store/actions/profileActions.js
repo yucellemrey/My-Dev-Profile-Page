@@ -16,6 +16,7 @@ export const fetchProfile = () => {
     dispatch(setProfileLoading(true));
 
     const lang = localStorage.getItem("language");
+    console.log(lang);
 
     try {
       const postResponse = await axios.post(

@@ -11,7 +11,7 @@ export const setSkills = (skills) => {
 export const fetchSkills = () => {
   return async (dispatch) => {
     const lang = localStorage.getItem("language");
-
+    console.log(lang);
     try {
       const postResponse = await axios.post(
         "https://reqres.in/api/workintech",
