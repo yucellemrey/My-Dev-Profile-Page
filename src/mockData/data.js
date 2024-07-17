@@ -1,0 +1,140 @@
+export const data = {
+  en: {
+    skills: [
+      {
+        id: 1,
+        name: "JavaScript",
+        description:
+          "Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        id: 2,
+        name: "Emre.js",
+        description:
+          "Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        id: 3,
+        name: "Node.js",
+        description:
+          "Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+    ],
+    projects: [
+      {
+        id: 1,
+        image:
+          "https://s3-alpha-sig.figma.com/img/ad50/81bf/69bb4825e42350e768340fdbec09d78b?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TPbo1UltzjPx7QlgDf5MmZJ10nhxoA3oJwqY2r4FysR-oiXq-OJRG7B-3W4WgdztcghSA4jVqmKXvjwKG8QcLsUDMSynq0KA6AhvBmQ-VMuPo~Hbt17QubSXjUA94zwFtRBZDyI9m9~N517jAMxIiKe3Ymb21MkksxB48GZf7~HKLE~p35XzNd5qcytYj8uKpXiKDwVLgkc4sNhwpg~GojwpUZx7VdUsEZKW29kdNz61v1I9-O2BJ~nOHM9ZhNEqinSM~x750ieYaB51k4svwVE1WZRyWHIx282YP3KkEcCUUUQ3TbW467Ge8Jyd15knT3UGBuZ5ZtqqbuYqEzxG~A__",
+        title: "Workintech",
+        description:
+          "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline.",
+        tools: ["React", "Redux", "Axios"],
+        githubLink: "https://github.com/yucellemrey",
+        websiteLink: "https://workintech.com",
+      },
+      {
+        id: 2,
+        image:
+          "https://s3-alpha-sig.figma.com/img/64b8/0612/2ad18b91bc83b5e0c2524ee319ac4a12?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GJFrKsKybRaN3kEm794F2~Cj~h-sbtXTKB1GdNQLvNs66bIzfCgX5i6kTiRZT7Ao7SMoz-5P1SCUl8-U2EJoixTI26ec84lymQoGNCrT9isLqe5wCXqMZdtLG5n2nuTPxNHz35J4RrSc7AurRIisGzTAE~WlpKP2d8yus0lYfaFvl2m4e~BcxRLE0Y559F2vyi9vaVUAL8ducXBO7vJcTKaCZskfDfi4JWPaSt6EAX16cW8XrVNbkgWYQ-47DzoM0amCuqjTDxfYOupyaHyeRAPmR4KSvPt4IQAySKUojb5kGk79-99OOlDVHI12Mq3Zs2MmJFe-tsaRZH1KTKW-dw__",
+        title: "Random Jokes",
+        description:
+          "A website that fetches and displays random jokes using an external API.",
+        tools: ["React", "CSS", "API"],
+        githubLink: "https://github.com/yucellemrey",
+        websiteLink: "https://randomjokes.com",
+      },
+      {
+        id: 3,
+        image:
+          "https://s3-alpha-sig.figma.com/img/600e/630b/a9370e031b441737654465d0f374af51?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CTexhQFrC8JuqJkf2T7ozd5YzBhWnkbLSqLJuCt~15xPc0uuaI5JTEA5WMzQ3C~88XbjhzKynnTP1RecJcRW4YR01lP3uDG9nt1JbFH8G0P8J9k5Znej31Iby0yPGBooyWRElU5ULyEWgfbsbjiUg66cTwwwUn62LcIOgu66Qz9J8R4lAe~iLZMjP9eDvemh7w4X-MNOgL~QXGCha0VsURfv5Vk61zVNyjqdH1ndLBimpXrReToEutlybTxfo-A3Bsy1yz6ju16useZ4eBCBtjygf0XwiorAn-DImUm2Pts5JCT62sZXblmHh0c3KIDpJxq~DsTUSa0ybp4vG48Q7g__",
+        title: "Journey",
+        description:
+          "A travel blog platform where users can share their travel experiences and tips.",
+        tools: ["React", "Redux", "Node.js"],
+        githubLink: "https://github.com/yucellemrey",
+        websiteLink: "https://journey.com",
+      },
+    ],
+    profile: {
+      birthDate: "13.10.1997",
+      city: "Istanbul",
+      education: {
+        university: "Özyeğin University",
+        degree: "Industrial Engineer",
+        graduationYear: 2022,
+      },
+      preferredRole: "Frontend, UI",
+      aboutMe:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+    },
+  },
+  tr: {
+    skills: [
+      {
+        id: 1,
+        name: "JavaScript",
+        description:
+          "Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        id: 2,
+        name: "Emre.js",
+        description:
+          "Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+      {
+        id: 3,
+        name: "Node.js",
+        description:
+          "Exceptuer sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      },
+    ],
+    projects: [
+      {
+        id: 1,
+        image:
+          "https://s3-alpha-sig.figma.com/img/ad50/81bf/69bb4825e42350e768340fdbec09d78b?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TPbo1UltzjPx7QlgDf5MmZJ10nhxoA3oJwqY2r4FysR-oiXq-OJRG7B-3W4WgdztcghSA4jVqmKXvjwKG8QcLsUDMSynq0KA6AhvBmQ-VMuPo~Hbt17QubSXjUA94zwFtRBZDyI9m9~N517jAMxIiKe3Ymb21MkksxB48GZf7~HKLE~p35XzNd5qcytYj8uKpXiKDwVLgkc4sNhwpg~GojwpUZx7VdUsEZKW29kdNz61v1I9-O2BJ~nOHM9ZhNEqinSM~x750ieYaB51k4svwVE1WZRyWHIx282YP3KkEcCUUUQ3TbW467Ge8Jyd15knT3UGBuZ5ZtqqbuYqEzxG~A__",
+        title: "Workintech",
+        description:
+          "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal kurulumlu bir çerez eklentisi.",
+        tools: ["React", "Redux", "Axios"],
+        githubLink: "https://github.com/yucellemrey",
+        websiteLink: "https://workintech.com",
+      },
+      {
+        id: 2,
+        image:
+          "https://s3-alpha-sig.figma.com/img/64b8/0612/2ad18b91bc83b5e0c2524ee319ac4a12?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GJFrKsKybRaN3kEm794F2~Cj~h-sbtXTKB1GdNQLvNs66bIzfCgX5i6kTiRZT7Ao7SMoz-5P1SCUl8-U2EJoixTI26ec84lymQoGNCrT9isLqe5wCXqMZdtLG5n2nuTPxNHz35J4RrSc7AurRIisGzTAE~WlpKP2d8yus0lYfaFvl2m4e~BcxRLE0Y559F2vyi9vaVUAL8ducXBO7vJcTKaCZskfDfi4JWPaSt6EAX16cW8XrVNbkgWYQ-47DzoM0amCuqjTDxfYOupyaHyeRAPmR4KSvPt4IQAySKUojb5kGk79-99OOlDVHI12Mq3Zs2MmJFe-tsaRZH1KTKW-dw__",
+        title: "Rastgele Şakalar",
+        description:
+          "Harici bir API kullanarak rastgele şakalar alan ve görüntüleyen bir web sitesi.",
+        tools: ["React", "CSS", "API"],
+        githubLink: "https://github.com/yucellemrey",
+        websiteLink: "https://randomjokes.com",
+      },
+      {
+        id: 3,
+        image:
+          "https://s3-alpha-sig.figma.com/img/600e/630b/a9370e031b441737654465d0f374af51?Expires=1721606400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CTexhQFrC8JuqJkf2T7ozd5YzBhWnkbLSqLJuCt~15xPc0uuaI5JTEA5WMzQ3C~88XbjhzKynnTP1RecJcRW4YR01lP3uDG9nt1JbFH8G0P8J9k5Znej31Iby0yPGBooyWRElU5ULyEWgfbsbjiUg66cTwwwUn62LcIOgu66Qz9J8R4lAe~iLZMjP9eDvemh7w4X-MNOgL~QXGCha0VsURfv5Vk61zVNyjqdH1ndLBimpXrReToEutlybTxfo-A3Bsy1yz6ju16useZ4eBCBtjygf0XwiorAn-DImUm2Pts5JCT62sZXblmHh0c3KIDpJxq~DsTUSa0ybp4vG48Q7g__",
+        title: "Yolculuk",
+        description:
+          "Kullanıcıların seyahat deneyimlerini ve ipuçlarını paylaşabilecekleri bir seyahat blog platformu.",
+        tools: ["React", "Redux", "Node.js"],
+        githubLink: "https://github.com/yucellemrey",
+        websiteLink: "https://journey.com",
+      },
+    ],
+    profile: {
+      birthDate: "13.10.1997",
+      city: "İstanbul",
+      education: {
+        university: "Özyeğin Üniversitesi",
+        degree: "Endüstri Mühendisi",
+        graduationYear: 2022,
+      },
+      preferredRole: "Frontend, UI",
+      aboutMe:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+    },
+  },
+};

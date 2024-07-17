@@ -1,5 +1,5 @@
 import axios from "axios";
-import data from "../../mockData/db.json";
+import { data } from "../../mockData/data.js";
 
 export const setProjects = (projects) => {
   return {
