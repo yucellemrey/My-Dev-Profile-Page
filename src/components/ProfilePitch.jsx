@@ -5,6 +5,7 @@ import "../styles/profilePitch.css";
 function ProfilePitch() {
   const profile = useSelector((state) => state.profile.profile);
   const loading = useSelector((state) => state.profile.loading);
+  console.log(profile);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -21,23 +22,23 @@ function ProfilePitch() {
         <div>
           <h2 className="profile-pitch-titles">Profile</h2>
           <p>
-            <strong>Doğum Tarihi</strong> {profile?.birthDate}
+            <strong>Doğum Tarihi</strong> {profile.birthDate}
           </p>
           <p>
             <strong> İkamet Şehri </strong>
-            {profile?.city}
+            {profile.city}
           </p>
           <p>
             <strong>Eğitim Durumu</strong> {profile.education?.university},{" "}
             {profile.education?.degree}, {profile.education?.graduationYear}
           </p>
           <p>
-            <strong>Tercih Ettiği Rol </strong> {profile?.preferredRole}
+            <strong>Tercih Ettiği Rol </strong> {profile.preferredRole}
           </p>
         </div>
         <div className="profile-pitch-about">
           <h2 className="profile-pitch-titles">About Me</h2>
-          <p>{profile?.aboutMe}</p>
+          <p>{profile.aboutMe}</p>
         </div>
       </div>
     </div>
