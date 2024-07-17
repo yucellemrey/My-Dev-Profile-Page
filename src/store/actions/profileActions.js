@@ -9,22 +9,19 @@ export const setProfile = (profile) => {
 };
 
 export const fetchProfile = () => {
-  return async (dispatch) => {
+  return (dispatch) => {
     const lang = localStorage.getItem("language");
 
-    try {
-      console.log("Posting data to API...");
-      const postResponse = await axios.post(
-        "https://reqres.in/api/users",
-        data[lang]
-      );
-
-      console.log("Post response data:", postResponse.data);
-      const result = postResponse.data;
-
-      dispatch(setProfile(result.profile));
-    } catch (error) {
-      console.error("There was an error fetching the profile data!", error);
-    }
+    console.log("Posting data to API...");
+    axios
+      .post("https://reqres.in/api/users", data[lang])
+      .then((response) => {
+        console.log("Post response data:", response.data);
+        const result = response.data;
+        dispatch(setProfile(result));
+      })
+      .catch((error) => {
+        console.error("There was an error fetching the profile data!", error);
+      });
   };
 };
