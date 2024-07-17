@@ -1,5 +1,5 @@
 import axios from "axios";
-import { data } from "../../mockData/data.js";
+import data from "../../mockData/db.json";
 
 export const setSkills = (skills) => {
   return {
@@ -12,9 +12,6 @@ export const fetchSkills = () => {
   return (dispatch) => {
     const lang = localStorage.getItem("language");
 
-    console.log(data[lang]);
-
-    console.log("Posting skills data to API...");
     axios
       .post("https://reqres.in/api/users", data[lang])
       .then((response) => {
