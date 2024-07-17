@@ -97,3 +97,27 @@
   background-color: #3730A3;
   color: #ffffff;
 }
+
+
+@media only screen and (max-width: 768px) {
+  .header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .h-hire-me-button{
+    padding: 9px 18px 9px 18px;
+  }
+
+  .lang-switch-button{
+
+    padding: 4px 12px 4px 12px;
+    font-size: 12px;
+}
+
+.initials-image {
+  display: block;
+}
+}

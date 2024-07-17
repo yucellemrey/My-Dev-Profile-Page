@@ -69,3 +69,25 @@
   color: #0077B5;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 768px) {
+  .footer-content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-mail-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+  }
+  .footer-links {
+    margin-left:1.7em;
+    margin-top: 5vw;
+    padding-left: 0;
+  }
+  
+
+}

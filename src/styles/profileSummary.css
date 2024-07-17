@@ -94,3 +94,38 @@
   margin-left: 2vw;
 }
 
+@media only screen and (max-width: 768px) {
+  .profile-summary-container {
+    flex-direction: column;
+    width: 85%;
+    gap: 20px; 
+  }
+  .hire-me-button{
+    padding: 9px 18px 9px 18px;
+  }
+  .git-button{
+    padding: 9px 18px 9px 18px;
+  }
+  .linkedin-button{
+    padding: 9px 18px 9px 18px;
+  }
+  .profile-summary-header {
+    order: 0;
+  }
+
+  .profile-summary-image {
+    width: 100%;
+    margin: 20px 0;
+    order: 1;
+  }
+
+  .profile-summary-desc {
+    order: 2;
+  }
+
+  .profile-summary-buttons {
+    order: 3;
+  }
+  
+}
+

@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   width: 100vw;
- 
   place-items: center;
   overflow-x: hidden;
 }

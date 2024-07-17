@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Skill from "./Skill";
-import { useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import "../styles/skills.css";
 
 function SkillList() {
+ 
   const skills = useSelector((state) => state.skills.skills);
+
   return (
     <>
       <h1 className="skills-title">Skills</h1>

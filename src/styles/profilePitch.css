@@ -1,4 +1,3 @@
-@import './themes.css';
 
 .profile-pitch-container {
   display: flex;
@@ -55,4 +54,18 @@
 
 strong {
   margin-right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-pitch-context {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+  .profile-pitch-context > div {
+    width: 100%; 
+  }
+  .profile-pitch-about {
+    width: 100%;
+  }
 }

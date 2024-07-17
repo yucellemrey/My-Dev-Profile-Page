@@ -17,3 +17,13 @@
   font-weight: 600;
   padding: 3.5vw 7.5vw 0 7.5vw;
 }
+
+@media only screen and (max-width: 768px) {
+  .project-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vw;
+  }
+}

@@ -1,4 +1,5 @@
 import axios from "axios";
+import data from "../../mockData/db.json";
 
 export const setProfile = (profile) => {
   return {
@@ -8,14 +9,21 @@ export const setProfile = (profile) => {
 };
 
 export const fetchProfile = () => {
-  return (dispatch) => {
-    return axios
-      .get("http://localhost:5000/profile")
-      .then((res) => {
-        dispatch(setProfile(res.data));
-      })
-      .catch((error) => {
-        console.error("There was an error fetching the profile data!", error);
-      });
+  return async (dispatch) => {
+    const lang = localStorage.getItem("language");
+    console.log(data[lang]);
+    try {
+      const postResponse = await axios.post(
+        "https://reqres.in/api/workintech",
+        data[lang]
+      );
+
+      const result = postResponse.data;
+      console.log(result);
+
+      dispatch(setProfile(result.profile));
+    } catch (error) {
+      console.error("There was an error fetching the profile data!", error);
+    }
   };
 };
