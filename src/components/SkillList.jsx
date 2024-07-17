@@ -8,6 +8,8 @@ function SkillList() {
   const dispatch = useDispatch();
   const skills = useSelector((state) => state.skills.skills);
 
+  console.log(skills);
+
   useEffect(() => {
     dispatch(fetchSkills());
   }, [dispatch]);

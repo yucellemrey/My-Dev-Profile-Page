@@ -4,9 +4,14 @@ import "../styles/profilePitch.css";
 
 function ProfilePitch() {
   const profile = useSelector((state) => state.profile.profile);
+  const loading = useSelector((state) => state.profile.loading);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
 
   if (!profile || Object.keys(profile).length === 0) {
-    return <div>Loading...</div>; // Or any loading indicator you prefer
+    return <div>Loading...</div>;
   }
 
   return (
