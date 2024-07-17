@@ -12,6 +12,8 @@ export const fetchProfile = () => {
   return (dispatch) => {
     const lang = localStorage.getItem("language");
 
+    console.log(data);
+
     console.log("Posting data to API...");
     axios
       .post("https://reqres.in/api/users", data[lang])
