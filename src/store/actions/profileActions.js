@@ -10,10 +10,10 @@ export const setProfile = (profile) => {
 
 export const fetchProfile = () => {
   return (dispatch) => {
-    const lang = localStorage.getItem("language");
+    const lang = localStorage.getItem("language") || 'en';
 
     axios
-      .post("https://reqres.in/api/users", data[lang])
+      .post("https://reqres.in/api/workintech", data[lang])
       .then((response) => {
         console.log("Post response data:", response.data);
         const result = response.data;
